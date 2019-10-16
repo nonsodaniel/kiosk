@@ -16,15 +16,15 @@ export default class Carousel extends Component {
                         <div className="row">
                             <div className="col-md-3 carousel-tabs">
                                 <h6 className="text-dark text-center">CHECK-IN</h6>
-                                <h3 className="text-dark text-center">24 / <span className="carousel-tabs-span">June</span></h3>
+                                <h3 className="text-dark text-center">24 <span className="carousel-tabs-span">/ June</span></h3>
                             </div>
                             <div className="col-md-3 carousel-tabs">
                                 <h6 className="text-dark text-center">CHECK-OUT</h6>
-                                <h3 className="text-dark text-center">24 / <span className="carousel-tabs-span">June</span></h3>
+                                <h3 className="text-dark text-center">29 <span className="carousel-tabs-span">/ June</span></h3>
                             </div>
                             <div className="col-md-3 carousel-tabs">
                                 <h6 className="text-dark text-center">GUESTS</h6>
-                                <h3 className="text-dark text-center">24 / <span className="carousel-tabs-span">June</span></h3>
+                                <h3 className="text-dark text-center">03 <span className="carousel-tabs-span">/ June</span></h3>
                             </div>
                             <div className="col-md-3 carousel-tabs-last">
                                 <h6 className=" text-center text-white promotional-code">Have a promotional code?</h6>

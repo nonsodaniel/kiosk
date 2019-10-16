@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <React.Fragment>
       <div className="d-flex align-items-center justify-content-center navbar-title-div container">
-        <h6>Contact us directly  at +2349096548675 +2349096548675 +2349096548675 </h6>
+        <h6 className="contact-no">Contact us directly  at +2349096548675 +2349096548675 +2349096548675 </h6>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light">
 
@@ -19,32 +19,32 @@ export default function Navbar() {
 
           <ul className="navbar-nav ml-auto" style={ulStyle}>
             <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">ABOUT US <span className="sr-only">(current)</span></Link>
+              <Link to="/" className="nav-link nav-titles home">HOME <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">CONTACT US <span className="sr-only">(current)</span></Link>
+              <Link to="/about-us" className="nav-link nav-titles">ABOUT US <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">BLOG <span className="sr-only">(current)</span></Link>
+              <Link to="/rooms" className="nav-link nav-titles">OUR ROOMS <span className="sr-only">(current)</span></Link>
             </li>
 
-            <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">
-                <img src={Logo} style={{ width: "130px" }} />
+            <li className="nav-item logo-link" style={liStyle}>
+              <Link to="/" className="nav-link nav-titles">
+                <img src={Logo} style={{ width: "130px" }} className="logo" alt="..." />
               </Link>
             </li>
 
             <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">SIGN IN <span className="sr-only">(current)</span></Link>
+              <Link to="reservation" className="nav-link nav-titles">RESERVATION <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">GET STARTED <span className="sr-only">(current)</span></Link>
+              <Link to="/blogs" className="nav-link nav-titles">BLOGS <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link">GET STARTED <span className="sr-only">(current)</span></Link>
+              <Link to="/contact" className="nav-link nav-titles">CONTACT <span className="sr-only">(current)</span></Link>
             </li>
           </ul>
         </div>

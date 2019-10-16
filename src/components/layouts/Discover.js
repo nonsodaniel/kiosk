@@ -1,6 +1,4 @@
 import React from 'react'
-import image1 from '../layouts/assets/newspaper.jpg'
-import image2 from '../layouts/assets/money.png'
 
 const Discover = () => {
     return (
@@ -16,19 +14,19 @@ const Discover = () => {
 
                     <div className="container">
                         <ul className="row discover-ul-lists">
-                            <li className="col-md-5 discover-lists-img discover-lists "></li>
+                            <li className="col-md-5 discover-lists-img discover-lists discover-list-1 "></li>
                             <li className="col-md-6 discover-lists bg-light">
                                 <br />
                                 <h6 className="text-dark">Classic Room</h6>
                                 <h6 className="text-dark" style={{ fontSize: "14px", }}>Starting from <b>#3000</b></h6>
                             </li>
-                            <li className="col-md-5 discover-lists-img discover-lists"></li>
+                            <li className="col-md-5 discover-lists-img discover-lists discover-list-2"></li>
                             <li className="col-md-6 discover-lists">
                                 <br />
                                 <h6 className="text-dark">Classic Room</h6>
                                 <h6 className="text-dark" style={{ fontSize: "14px", }}>Starting from <b>#3000</b></h6>
                             </li>
-                            <li className="col-md-5 discover-lists-img discover-lists"></li>
+                            <li className="col-md-5 discover-lists-img discover-lists discover-list-3"></li>
                             <li className="col-md-6 discover-lists">
                                 <br />
                                 <h6 className="text-dark">Classic Room</h6>

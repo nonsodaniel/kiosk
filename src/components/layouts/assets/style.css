@@ -8,16 +8,30 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.contact-no{
+    font-size: smaller;
+    word-spacing: 3px;
+}
 .navbar-title-div{
     height: 8vh;
     width: 66%;
     border-bottom: 1px solid #9e9e9e6b;
 }
-.carousel-div{
-    background: url(../assets/carousel.png) no-repeat center center/cover;
-    z-index: 2;
-    height: 80vh;
+
+.nav-titles{
+    font-size: 13px;
 }
+.logo{
+    width: 145px;
+    margin: -6px 0 0 0;
+
+}
+.carousel-div{
+    background: url(../assets/background.png) no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+}
+
 
 .header-text{
     margin-top: 26px;
@@ -49,10 +63,11 @@ body{
 .carousel-tabs-last{
     border-right: 1px solid #9e9e9e6b;
     height: inherit;
-    background: #2c1f43;
+    background: #232b58;
 }
 .carousel-tabs > h6{
     margin: 3vh 0 0 0;
+    font-size: 12px;
 }
 .carousel-tabs > h3{
     margin: 3vh 0 0 0;
@@ -95,6 +110,13 @@ body{
     /* height: 61px; */
     height: 40vh
 }
+.about-us-text{
+    font-size: 12px;
+}
+.best-place{
+   font-size: 35px;
+     font-family: auto;
+}
 .about-us-image{
     height: inherit;
     width: 100%;
@@ -102,7 +124,7 @@ body{
 }
 .view-more-row{
     height: 35vh;
-    /* border: 1px solid red; */
+    background: url('../assets/view.png') no-repeat center center/cover;
 }
 
 #discover{
@@ -130,60 +152,117 @@ body{
 }
 .discover-lists-img{
     background: url('../assets/money.png');
-    height: 70px;
+    height: 100px;
     width: inherit;
 }
 .discover-img-2{
-    background: url('../assets/control.png');
+    background: url('../assets/interior1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 65vh
 }
+.discover-list-1{
+    background: url('../assets/interior1.png') no-repeat center center/cover;
+}
+.discover-list-2{
+    background: url('../assets/interior2.png') no-repeat center center/cover;
+}
+.discover-list-3{
+    background: url('../assets/interior3.png') no-repeat center center/cover;
+}
 
-
+.card-img-top{
+    height: 225px; width: 100%; display: block 
+}
 
 #testimonialBlog{
-    /* border: 1px solid pink; */
+    background: url('../assets/view.png') no-repeat center center/cover;
     margin: 6vh 0 0 0;
     width: 100%;
 }
-
+.blog-date{
+    font-size: 12px;
+}
+.card-text{
+    font-family: auto;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.test-img{
+    width: 23vh;
+    height: 23vh;
+    margin: 20px;
+}
 .tb-container{
     width: 60%;
     /* border: 1px solid red; */
-    height: 85vh;
+    height: 95vh;
 }
 
 .tb-title-1{
     margin: 10vh 0 0 0;
+    font-size: smaller;
 }
 
 .tb-title-2
 {
     margin: 5vh 0 0 0;
+    font-size: 25px;
+    font-family: auto;
 }
 
 .tb-content{
     margin: 7vh 0 0 0;
+    font-style: italic;
+    font-family: auto;
+    font-weight: 700;
 }
 .blog-title{
     margin: 10vh 0 10vh 0;
+    font-family: auto;
+    font-size: 31px;
 }
 
+.map-img{
+    background: url('../assets/map.png') no-repeat center center/cover;
+}
 
-
+.contact-text-div{
+    margin: 75px 0 0 0
+}
+.contact-text-1{
+    font-size: 13px;
+    font-family: 'SourceSansPro-Bold';
+    letter-spacing: 4.94px;
+    color: "#9b9b9b"
+}
+.contact-text-2{
+    font-family: auto;
+    font-size: 27px;
+}
+.contact-text-3{
+    font-family: auto;
+    font-size: 20px;
+}
+.contact-text-4{
+    /* font-family: auto; */
+    font-size: 13px;
+}
+.contact-text-5{
+    font-family: auto;
+    font-size: 24px;
+}
+.adjust-contact{
+    margin: 0 0 0 70px;
+}
+.call-direct{
+    margin: 27px 0 17px 0;
+}
 
 .contact-row{
-    height: 60vh;
+    height: 75vh;
     /* border: 1px solid green; */
 }
-
-.map-div{
-
-}
-.contact-div{
-
-}
-
-
 
 
 
@@ -193,7 +272,9 @@ body{
 }
 
 
-
+.footer-social{
+  background: url('../assets/social.png');
+}
 
 
 
@@ -277,7 +358,9 @@ body{
 }
 
 .footer-row-style{
-    padding: "10vh 0"
+    padding: 8vh 0 0 0;
+    height: 49vh;
+
 }
 
 
@@ -311,4 +394,44 @@ body{
     .title-div{
         overflow: hidden;
     }
+    #about-us{
+        margin: 55vh 0 0 0;
+    }
+    .about-us-image-container{
+        width: 72vw;
+        transform: translateX(-58px);
+    }
+    .check-avail{
+        transform: translateX(30px);
+    }
+    .discover-lists{
+        width: 100%;
+    }
+    #testimonialBlog{
+        transform: translate(3px, 71vh);
+    }
+    #contacts{
+        transform: translateY(71vh);
+    }
+    #footer{
+        transform: translateY(70vh);
+    }
+    .footer-row-style .footer-list{
+        padding: 0;
+    }
+    .home{
+        padding-left: 17px;
+        margin: -23px 0;
+    }
+    .logo-link{
+        padding-left: 6px;
+        transform: translateY(-21vh);
+    }
+    .navbar-toggler{
+        margin: 0 78vw;
+    }
+  }
+
+  .footer-text{
+    font-size: small;
   }

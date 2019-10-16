@@ -7,7 +7,6 @@ import AboutUs from "./components/layouts/AboutUs";
 import Discover from "./components/layouts/Discover";
 import TestimonialBlog from "./components/layouts/TestimonialBlog";
 import Contacts from "./components/layouts/Contacts";
-import Socials from "./components/layouts/Socials";
 
 
 class App extends Component {
@@ -24,7 +23,6 @@ class App extends Component {
           <TestimonialBlog />
           <Contacts />
           <Footer />
-          {/* <Socials /> */}
         </div>
       </BrowserRouter>
     );
