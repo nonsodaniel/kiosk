@@ -32,21 +32,3 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 
-
-
-
-    SERVER ASSESSMENT
-
-
-    cd into the server directory
-
-### `cd server`
-
-
-    start the server
-
-### `node server.js`
-
-
-You will now be prompted by the CLI to enter your Card details for a correct Transction to take place and then<br />
-get charged using FlutterWave Payment Gateway.
