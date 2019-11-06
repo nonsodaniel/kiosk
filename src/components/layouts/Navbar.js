@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css'
+import './assets/css/style.css'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
@@ -7,33 +7,37 @@ export default function Navbar() {
     <React.Fragment>
 
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <Link to="/" class="navbar-brand">One Kiosk</Link>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-light bg-white">
+          <Link to="/" className="navbar-brand">
+            <div className="logo">
+
+            </div>
+          </Link>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="list-container">
 
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <Link to="/" class="nav-link">Home</Link>
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">Home</Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/" class="nav-link">About Us</Link>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">About Us</Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/" class="nav-link">Shopper</Link>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">Shopper</Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/" class="nav-link">Contact Us</Link>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">Contact Us</Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/" class="nav-link"><button className="btn  btn-logIn border text-dark bg-white">LOG IN</button></Link>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link"><button className="btn  btn-logIn border text-dark bg-white">LOG IN</button></Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/" class="nav-link"><button className="btn text-white btn-signUp">SIGN UP</button></Link>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link"><button className="btn text-white btn-signUp">SIGN UP</button></Link>
                 </li>
 
               </ul>
@@ -47,8 +51,8 @@ export default function Navbar() {
         <div className="container login-container">
           <h2 className="text-center login-text">Log In</h2>
           <form className="form mx-auto">
-            <input type="text" class="form-control mb-2 mr-sm-2 col-md-7 " placeholder="Username" /><br />
-            <input type="password" class="form-control mb-2 mr-sm-2 col-md-7 " placeholder="Password" /><br />
+            <input type="text" className="form-control mb-2 mr-sm-2 col-md-7 shadow-none " placeholder="Username" /><br />
+            <input type="password" className="form-control mb-2 mr-sm-2 col-md-7 shadow-none " placeholder="Password" /><br />
             <button className="col-md-7 btn btn-primary btn-login">Log In</button><br />
           </form>
           <h6 className="text-center ">Login with</h6>
