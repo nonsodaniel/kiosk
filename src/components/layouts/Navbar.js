@@ -1,64 +1,73 @@
 import React from "react";
-import './assets/style.css'
+import './style.css'
 import { Link } from 'react-router-dom'
-import Logo from '../layouts/assets/transcorp-1@2x.png'
 
 export default function Navbar() {
   return (
     <React.Fragment>
-      <div className="d-flex align-items-center justify-content-center navbar-title-div container">
-        <h6 className="contact-no">Contact us directly  at +2349096548675 +2349096548675 +2349096548675 </h6>
-      </div>
-      <nav className="navbar navbar-expand-lg navbar-light">
 
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <Link to="/" class="navbar-brand">One Kiosk</Link>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="list-container">
 
-          <ul className="navbar-nav ml-auto" style={ulStyle}>
-            <li className="nav-item active" style={liStyle}>
-              <Link to="/" className="nav-link nav-titles home">HOME <span className="sr-only">(current)</span></Link>
-            </li>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <Link to="/" class="nav-link">Home</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/" class="nav-link">About Us</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/" class="nav-link">Shopper</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/" class="nav-link">Contact Us</Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/" class="nav-link"><button className="btn  btn-logIn border text-dark bg-white">LOG IN</button></Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/" class="nav-link"><button className="btn text-white btn-signUp">SIGN UP</button></Link>
+                </li>
 
-            <li className="nav-item active" style={liStyle}>
-              <Link to="/about-us" className="nav-link nav-titles">ABOUT US <span className="sr-only">(current)</span></Link>
-            </li>
+              </ul>
 
-            <li className="nav-item active" style={liStyle}>
-              <Link to="/rooms" className="nav-link nav-titles">OUR ROOMS <span className="sr-only">(current)</span></Link>
-            </li>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-            <li className="nav-item logo-link" style={liStyle}>
-              <Link to="/" className="nav-link nav-titles">
-                <img src={Logo} style={{ width: "130px" }} className="logo" alt="..." />
-              </Link>
-            </li>
-
-            <li className="nav-item active" style={liStyle}>
-              <Link to="reservation" className="nav-link nav-titles">RESERVATION <span className="sr-only">(current)</span></Link>
-            </li>
-
-            <li className="nav-item active" style={liStyle}>
-              <Link to="/blogs" className="nav-link nav-titles">BLOGS <span className="sr-only">(current)</span></Link>
-            </li>
-            <li className="nav-item active" style={liStyle}>
-              <Link to="/contact" className="nav-link nav-titles">CONTACT <span className="sr-only">(current)</span></Link>
-            </li>
-          </ul>
+      <section className="login">
+        <div className="container login-container">
+          <h2 className="text-center login-text">Log In</h2>
+          <form className="form mx-auto">
+            <input type="text" class="form-control mb-2 mr-sm-2 col-md-7 " placeholder="Username" /><br />
+            <input type="password" class="form-control mb-2 mr-sm-2 col-md-7 " placeholder="Password" /><br />
+            <button className="col-md-7 btn btn-primary btn-login">Log In</button><br />
+          </form>
+          <h6 className="text-center ">Login with</h6>
+          <div className="d-flex justify-content-center">
+            <button className="btn text-white btn-facebook">facebook</button>
+            <button className="btn text-white btn-google">Google</button>
+          </div><br />
+          <h6 className="text-center forgot-pwd-text">Forgot password?</h6>
+          <div className="d-flex justify-content-center not-a-member">
+            <div className="font-size-small">Not a member yet?</div>
+            <div>Sign Up</div>
+          </div>
         </div>
-      </nav>
+      </section>
+
 
     </React.Fragment>
   );
 }
 
-const ulStyle = {
-  margin: "0 auto"
-}
 
-const liStyle = {
-  paddingLeft: "17px"
-}
 
